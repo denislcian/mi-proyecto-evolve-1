@@ -20,24 +20,46 @@ python main.py
 ## Estructura del proyecto
 
 mi_proyecto/
+
 │
+
 ├── scripts/
+
 │
+
 ├── src/
+
 │   └── conversores/
+
 │       ├── __init__.py
+
 │       ├── longitud.py
+
 │       ├── temperatura.py
+
 │       └── masa.py
+
 │   └── main.py
+
 │
+
 ├── tests/
+
 │   ├── __init__.py
+
 │   ├── test_longitud.py
+
 │   ├── test_temperatura.py
+
 │   └── test_masa.py
+
 │
+
 ├── .gitignore
+
 ├── README.md
+
 ├── requirements.txt
+
 └── setup.py
+
