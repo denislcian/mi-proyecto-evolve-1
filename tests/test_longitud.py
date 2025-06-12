@@ -1,4 +1,4 @@
-from src.conversores.longitud import metros_a_kilometros, pulgadas_a_centimetros
+from mi_conversor import metros_a_kilometros, pulgadas_a_centimetros
 
 def test_metros_a_kilometros():
     assert metros_a_kilometros(1000) == 1
