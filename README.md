@@ -98,6 +98,8 @@ metros_a_kilometros(metros): Convierte metros a kilómetros.
 
 pulgadas_a_centimetros(pulgadas): Convierte pulgadas a centímetros.
 
+gramos_a_kilos(gramos): Convierte gramos a kilos.
+
 celsius_a_fahrenheit(celsius): Convierte grados Celsius a Fahrenheit.
 
 fahrenheit_a_celsius(fahrenheit): Convierte grados Fahrenheit a Celsius.
