@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: mi_conversor
+Version: 0.1.0
+Summary: Libreria sencilla de conversión
+Author: Denis Lucian Morar Ochis
+Requires-Python: >=3.7
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
