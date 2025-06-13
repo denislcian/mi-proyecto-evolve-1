@@ -1,84 +1,112 @@
-# Conversor de Unidades en Python
+# Descripción General
 
-Un conversor de unidades sencillo y práctico desarrollado con Python. Permite realizar conversiones de longitud, temperatura y masa desde la terminal.
+mi_conversor es una librería Python que ofrece funciones para convertir:
+
+Metros a kilómetros
+
+Pulgadas a centímetros
+
+Celsius a Fahrenheit
+
+Fahrenheit a Celsius
+
+El objetivo es practicar la creación de paquetes Python reutilizables, con estructura profesional, documentación y ejemplos de uso.
 
 ## Estructura del Proyecto
 
 ```
-mi-proyecto-evolve/
+mi-proyecto-evolve-1/
 │
-├── scripts/
 ├── src/
-│   └── conversores/
+│   └── mi_conversor/
 │       ├── __init__.py
 │       ├── longitud.py
 │       ├── temperatura.py
 │       └── masa.py
-│   └── main.py
 ├── tests/
-│   ├── __init__.py
+│   ├──  __init__.py
 │   ├── test_longitud.py
 │   ├── test_temperatura.py
 │   └── test_masa.py
+├── main.py
 ├── .gitignore
 ├── README.md
+├── pyproject.toml
 ├── requirements.txt
 └── setup.py
 ```
 
 
-## Desarrollo
+## Instalación
 
 1. Clona este repositorio
    ```bash
    git clone https://github.com/denislcian/mi-proyecto-evolve-1.git
-   cd mi-proyecto-evolve
+   cd mi-proyecto-evolve-1
    ```
-2. Accede a la carpeta src:
-   ```bash
-   cd src
+2. Instala la librería en modo editable:
+    ```bash
+   pip install -e .
    ```
-3. Ejecuta el programa:
-   ```bash
-   python main.py
-   ```
-No necesitas instalar nada mas, solo tener Python 3 instalado en tu PC
 
-## Como funciona
-Al ejecutar el programa, aparecerá un menú interactivo con las siguientes opciones:
+Esto permite importar mi_conversor desde cualquier script Python en tu entorno 
 
-1. Metros a Kilómetros
-2. Pulgadas a Centímetros
-3. Celsius a Fahrenheit
-4. Gramos a Kilos
+## Uso
+Puedes importar las funciones directamente en tu código:
 
-El usuario selecciona una opción e introduce el valor a convertir. El programa muestra el resultado de la conversión en pantalla.
+```python
+from mi_conversor import metros_a_kilometros, pulgadas_a_centimetros, celsius_a_fahrenheit, fahrenheit_a_celsius
 
-
-## Ejemplo de uso
-```text
-Conversor de Unidades
-1. Metros a Kilómetros
-2. Pulgadas a Centímetros
-3. Celsius a Fahrenheit
-4. Gramos a Kilos
-Elige una opción (1-4): 1
-Introduce metros: 1500
-1500.0 metros son 1.5 kilómetros
+print(metros_a_kilometros(1500))        # 1.5
+print(pulgadas_a_centimetros(10))       # 25.4
+print(celsius_a_fahrenheit(0))          # 32.0
+print(fahrenheit_a_celsius(32))         # 0.0
 ```
+O ejecutar el ejemplo incluido:
+
+```bash
+python main.py
+```
+
 ## Pruebas
 
-El proyecto incluye una carpeta tests con pruebas automaticas. Para ejecutarlas, puedes usar cualquier framework de testing como pytest:
+El proyecto incluye pruebas unitarias con pytest.
+
+Para ejecutarlas
+
 ```bash
-pytest tests/
+pytest 
 ```
 
-## Tecnologías utilizadas
+## Documentación de funciones
 
-** Python 3.x
+metros_a_kilometros(metros): Convierte metros a kilómetros.
 
-No requiere librerias externas
+pulgadas_a_centimetros(pulgadas): Convierte pulgadas a centímetros.
+
+celsius_a_fahrenheit(celsius): Convierte grados Celsius a Fahrenheit.
+
+fahrenheit_a_celsius(fahrenheit): Convierte grados Fahrenheit a Celsius.
+
+
+## Requisitos 
+** Python 3.7 o superior
+
+** No requiere dependencias externas
+
+## Autor
+
+DENIS LUCIAN MORAR OCHIS 
 
 ## Licencia
 
-Este proyecto es de uso libre con fines educativos
+Uso educativo 
+
+## Notas 
+
+El proyecto está subido a GitHub en la rama main.
+
+Puedes modificar o ampliar la librería fácilmente añadiendo nuevas funciones y módulos.
+
+Si tienes dudas o sugerencias, abre un issue en el repositorio.
+
