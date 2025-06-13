@@ -1,3 +1,4 @@
+
 [build-system]
 requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -7,6 +8,14 @@ name = "mi_conversor"
 version = "0.1.0"
 description = "Librería sencilla de conversión"
 authors = [{name = "Denis Lucian Moran Ochis"}]
+requires-python = ">=3.7"
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
