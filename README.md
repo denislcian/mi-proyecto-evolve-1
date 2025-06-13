@@ -6,6 +6,8 @@ Metros a kilómetros
 
 Pulgadas a centímetros
 
+Gramos a Kilos
+
 Celsius a Fahrenheit
 
 Fahrenheit a Celsius
